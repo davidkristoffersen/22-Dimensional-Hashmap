@@ -10,4 +10,4 @@ Along the hashmap is documents to test the map on text files.
 
 make
 
-./hashtable_main text.txt
+./hashtable_main text/text.txt
