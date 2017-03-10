@@ -117,7 +117,7 @@ void *map_get(map_t *map, void *key) {
 
 	int *idx = global_idx;
 	mapnode_t *node = map_get_node(map, idx);
-	printf ("map->hashtable[%d][%d][%d][%d][%d][%d][%d][%d][%d][%d][%d][%d][%d][%d][%d][%d][%d][%d][%d][%d][%d]: Val = %d\tKey = %s\n", idx[0], idx[1], idx[2], idx[3], idx[4], idx[5], idx[6], idx[7], idx[8], idx[9], idx[10], idx[11], idx[12], idx[13], idx[14], idx[15], idx[16], idx[17], idx[18], idx[19], idx[20], *(int *)map->hashtable[idx[0]][idx[1]][idx[2]][idx[3]][idx[4]][idx[5]][idx[6]][idx[7]][idx[8]][idx[9]][idx[10]][idx[11]][idx[12]][idx[13]][idx[14]][idx[15]][idx[16]][idx[17]][idx[18]][idx[19]][idx[20]]->val, map->hashtable[idx[0]][idx[1]][idx[2]][idx[3]][idx[4]][idx[5]][idx[6]][idx[7]][idx[8]][idx[9]][idx[10]][idx[11]][idx[12]][idx[13]][idx[14]][idx[15]][idx[16]][idx[17]][idx[18]][idx[19]][idx[20]]->key);
+	// printf ("map->hashtable[%d][%d][%d][%d][%d][%d][%d][%d][%d][%d][%d][%d][%d][%d][%d][%d][%d][%d][%d][%d][%d]: Val = %d\tKey = %s\n", idx[0], idx[1], idx[2], idx[3], idx[4], idx[5], idx[6], idx[7], idx[8], idx[9], idx[10], idx[11], idx[12], idx[13], idx[14], idx[15], idx[16], idx[17], idx[18], idx[19], idx[20], *(int *)map->hashtable[idx[0]][idx[1]][idx[2]][idx[3]][idx[4]][idx[5]][idx[6]][idx[7]][idx[8]][idx[9]][idx[10]][idx[11]][idx[12]][idx[13]][idx[14]][idx[15]][idx[16]][idx[17]][idx[18]][idx[19]][idx[20]]->val, map->hashtable[idx[0]][idx[1]][idx[2]][idx[3]][idx[4]][idx[5]][idx[6]][idx[7]][idx[8]][idx[9]][idx[10]][idx[11]][idx[12]][idx[13]][idx[14]][idx[15]][idx[16]][idx[17]][idx[18]][idx[19]][idx[20]]->key);
 	return node->val;
 }
 

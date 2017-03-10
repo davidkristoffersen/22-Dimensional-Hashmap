@@ -71,7 +71,7 @@ int main(int argc, char **argv) {
 	void *tmp_item;
 	while (list_size(wordlist) > 0) {
 		tmp_item = list_popfirst(wordlist);
-		// printf("\t%3d, \"%s\"\n", ((word_t*)tmp_item)->freq, ((word_t*)tmp_item)->word);
+		printf("\t%3d, \"%s\"\n", ((word_t*)tmp_item)->freq, ((word_t*)tmp_item)->word);
 	}
 	printf("Map size: %d\n", map_size(map));
 	// printf("Map maxsize: %d\n", map_maxsize(map));
